@@ -24,6 +24,6 @@ image定位，可以定位桌面应用或者canvas内容，
 - \*text to click\*@pos=X - 匹配第X个
 
 
-- visualAssert - 如果没有找到匹配的图像，则宏会停止并报错。
+- visualAssert - 如果没有找到匹配的图像，则宏会停止并报错。识别出来的图片会通过`!imagex` `!imagey`返回图片的中心坐标点。
 - visualVerify - 如果未找到图像，则宏会记录警告，但宏的执行会继续。
 - visualSearch - 匹配的数量被填入一个变量，就像 sourceSearch 命令一样。如果没有找到图像，则匹配的数量为 0。
