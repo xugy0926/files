@@ -1,0 +1,6 @@
+- 视频转音频 - [yt-dlp/yt-dlp: A feature-rich command-line audio/video downloader](https://github.com/yt-dlp/yt-dlp)
+- 音频转文本 [AssemblyAI](https://www.assemblyai.com/app)
+- 翻译 [讯飞文档翻译](https://fanyi.xfyun.cn/console/trans/doc) - 上传 PDF/Word/Excel/PPT
+- 格式化 - [vinta/pangu.js](https://github.com/vinta/pangu.js): Paranoid text spacing in JavaScript
+- 编辑 - [Obsidian](https://obsidian.md/) - Sharpen your thinking
+- 排版 - [墨滴](https://www.mdnice.com/) | 看颜值的文章社区
