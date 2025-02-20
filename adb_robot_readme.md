@@ -1,5 +1,7 @@
 # adb_robot.sh 说明
 
+https://github.com/xugy0926/files/blob/main/adb_robot.sh
+
 adb_robot.sh 实现了自动化进入美团APP、输入搜索词、进入搜索页、滚动页面，并对页面进行截图。目的是以截图的方式，收集美团APP主搜结果页的数据。有了截图数据后，可以通过AI方式分析图片提炼截图的 JSON 数据。最终得到所有的商品数据。
 
 本片文档主要是介绍收集数据的自动化操作，不涉及截图的AI分析过程。
