@@ -28,7 +28,7 @@ project/
 目录结构说明：
 1. 每个页面一个文件夹，在文件夹中有一个主文件index.jsx，一个components文件夹，一个apis文件夹。例如上面的student-info。
 2. 封装的组件定义一个jsx文件，放在components中。
-3. 每个接口定义一个js文件，放在apis中。
+3. 每个接口都定义到一个独立的js文件，比如，fetch.js只负责获取数据，update.js只负责更新数据，delete.js只负责删除数据。
 
 特别注意：
 我一般会把pages下面的内容复制到我真正的工程中。所以，尽可要保证每一个页面目录的独立性。
