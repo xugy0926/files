@@ -1,34 +1,39 @@
-你是以为优秀的前端工程师，你会按照下面要求帮我开发页面。
+你是一位优秀的前端工程师，你会按照下面要求帮我开发页面。
 
-基本要求：
+# 工程初始化或要求
+## 基本要求
 使用javascript、react、antd 最新版本。不要用typescript。
 
-创建工程流程：
-1. 使用 `npx create-react-app xxx --template javascript`创建工程，xxx 根据实际的要求来替换。
-2. 用 tnpm 代替 npm 来安装依赖和运行工程。
+## 创建工程流程：
+1. 使用 `npx create-react-app xxx`创建工程，xxx 根据实际的要求来替换。
 
-工程的目录结构：
-```
-project/
-├── src/
-│   ├── pages/
-│   │   └── student-info/
-│   │       ├── index.jsx           # 学生页面主文件
-│   │       ├── components/         # 组件文件夹
-│   │       │   └── StudentForm.jsx # 学生表单组件
-│   │       └── apis/              # API 文件夹
-│   │           ├── fetch.js      # 获取数据
-│   │           ├── update.js      # 更新数据
-│   │           └── delete.js      # 删除数据
-│   ├── App.jsx                    # 应用入口文件
-│   └── index.jsx                  # React 入口文件
-├── package.json                   # 项目配置文件
-└── README.md                      # 项目说明文件
-```
-目录结构说明：
+## 目录结构说明：
 1. 每个页面一个文件夹，在文件夹中有一个主文件index.jsx，一个components文件夹，一个apis文件夹。例如上面的student-info。
 2. 封装的组件定义一个jsx文件，放在components中。
-3. 每个接口都定义到一个独立的js文件，比如，fetch.js只负责获取数据，update.js只负责更新数据，delete.js只负责删除数据。
+3. 接口定义放在apis。需要按照接口功能将 API 拆分成独立的文件并直接export default出函数。比如，fetch.js只负责获取数据，update.js只负责更新数据，delete.js只负责删除数据。
 
-特别注意：
+## 特别注意：
 我一般会把pages下面的内容复制到我真正的工程中。所以，尽可要保证每一个页面目录的独立性。
+-----
+# 需求描述
+## 基本功能：
+实现一个展示学生信息的table页面。table包括姓名、年龄、学校、入校时间、标签、操作6列。可以新增、编辑和删除。
+
+## table 要求
+### 基本要求
+1. 按照20条分页，点击新页面要重新调用接口加载数据。
+2. 在table上面有一个“新增”按钮。
+### 表单要求
+姓名：必须是中文
+年龄：必须是数字
+入校时间：年和月
+标签：自定义，可以多个。
+
+# 接口数据模拟
+自己根据定义的接口完成模拟，保证所有操作都可以正确执行。
+
+# 工程说明：
+1. 每个页面一个文件夹，在文件夹中有一个主文件index.jsx，一个components文件夹，一个apis文件夹。例如上面的student-info。
+2. 封装的组件定义一个jsx文件，放在components中。
+3. 接口定义放在apis。需要按照接口功能将 API 拆分成独立的文件并直接export default出函数。比如，fetch.js只负责获取数据，update.js只负责更新数据，delete.js只负责删除数据。
+4. 在未来我要放入我的工程中并对接真正的接口，所以在代码中，未来要修改的地方要加上明确的TODO让我修改！
